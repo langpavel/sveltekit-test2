@@ -7,10 +7,11 @@
   import { _, isLoading } from 'svelte-i18n';
 
   import LocaleSwitcher from '$lib/locale-switcher/LocaleSwitcher.svelte';
+  import Waiting from '$lib/waiting/Waiting.svelte';
 </script>
 
 {#if $isLoading}
-  ⌛
+  <Waiting />
 {:else}
   <LocaleSwitcher />
 
