@@ -8,4 +8,6 @@
   <a href="/settings">Settings</a>
 </nav>
 
-<slot />
+<main>
+  <slot />
+</main>
